@@ -34,7 +34,25 @@ Anything that breaks an existing deep link is a major change. Links into this re
   none.
 - Style-Guide: a section defining what the avoid-list bans do *not* cover, and an explicit table
   of which files are exempt from the `Related`/`References` requirement.
-- README: a `Related` section and an audit status badge.
+- README: a `Related` section, an audit status badge, a contribution routing table, and a
+  Mermaid diagram contrasting a prompt list with a playbook entry.
+- `SUPPORT.md` — routes each kind of question to the place that can answer it, and states what
+  makes a report actionable. Completes GitHub's community standards checklist.
+- `CITATION.cff` — citable metadata for anyone referencing this in documentation or training.
+- `.github/CODEOWNERS` — review required on the standards, the enforcement scripts, the
+  taxonomy index, and the security guidance. Changing those changes every file downstream.
+- `.github/dependabot.yml` — monthly updates for the pinned GitHub Actions. A repository with
+  no application dependencies still has supply-chain surface in its workflow.
+- `.github/DISCUSSION_TEMPLATE/` — Q&A and Show and tell templates. The Show and tell template
+  requires a "where it does not work" answer, which is what separates a contribution from an
+  advertisement.
+- `docs/Publishing.md` — the Pages, Wiki, Discussions, releases, and labels decisions, recorded
+  so they can be argued with rather than rediscovered.
+- `_config.yml` — optional Jekyll configuration for GitHub Pages. Not enabled by any workflow.
+- `checklists/release.md` — the pre-tag checklist, including the accuracy checks a script
+  cannot make.
+- `assets/screenshots/README.md` — capture specification and a pre-commit safety checklist.
+  No placeholder images are committed, deliberately.
 
 ### Changed
 

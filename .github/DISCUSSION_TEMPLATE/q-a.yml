@@ -1,0 +1,48 @@
+title: "[Q&A] "
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Questions belong here rather than in the issue tracker. Issues are for
+        defects; a question answered here stays searchable for the next person
+        who has it.
+
+        **Before posting:** check [docs/FAQ.md](../blob/main/docs/FAQ.md) and search
+        existing discussions. Most questions about weak output are answered by the
+        diagnostic table in the [Prompting Guide](../blob/main/docs/Prompting-Guide.md#iteration-diagnose-do-not-rephrase).
+
+  - type: textarea
+    id: question
+    attributes:
+      label: What are you trying to do?
+      description: The task, not the prompt. What outcome are you after?
+    validations:
+      required: true
+
+  - type: input
+    id: entry
+    attributes:
+      label: Which entry are you using?
+      description: Path, if any. Leave blank if none applies.
+      placeholder: "prompts/web/websites/website-architecture.md"
+    validations:
+      required: false
+
+  - type: textarea
+    id: tried
+    attributes:
+      label: What have you tried?
+      description: >-
+        What did you ask, and what did you get? Abbreviated is fine; edited is not.
+        Redact confidential detail with an obvious placeholder.
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Stack, project type, and anything unusual about your setup.
+    validations:
+      required: false

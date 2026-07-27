@@ -3,9 +3,9 @@
 Verification lists to run *during* work, not documentation to read before it.
 
 > [!NOTE]
-> **Status: planned for v1.1.** The checklists below are indexed here so the taxonomy is
-> stable and links resolve. Entry-specific checklists already exist inside every published
-> entry under [prompts/](../prompts/).
+> [release.md](release.md) is available now. The rest are indexed below so the taxonomy is
+> stable and links resolve, and are planned for v1.1. Entry-specific checklists already exist
+> inside every published entry under [prompts/](../prompts/).
 
 ## Scope
 
@@ -13,6 +13,7 @@ Each playbook entry carries its own Quality Checklist, scoped to that task. This
 
 | Checklist | Run it | Status |
 | --- | --- | --- |
+| [release.md](release.md) | Before tagging a version | **Available** |
 | `pre-flight.md` | Before starting work | Planned v1.1 |
 | `pre-ship.md` | Before anything reaches a user | Planned v1.1 |
 | `code-review.md` | Reviewing any change | Planned v1.1 |

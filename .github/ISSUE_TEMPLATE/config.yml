@@ -1,11 +1,29 @@
 blank_issues_enabled: false
 contact_links:
+  - name: Ask a question (Q&A)
+    url: https://github.com/rajtiwariyng/claude-code-playbook/discussions/categories/q-a
+    about: Questions are not defects. Ask in Discussions, where the answer stays searchable for the next person.
+
+  - name: Share a prompt or workflow
+    url: https://github.com/rajtiwariyng/claude-code-playbook/discussions/categories/show-and-tell
+    about: Show and tell. Failures are more valuable than successes, and far rarer.
+
+  - name: Disagree with a recommendation
+    url: https://github.com/rajtiwariyng/claude-code-playbook/discussions/categories/ideas
+    about: We want that argument in public. Bring the reasoning.
+
   - name: Claude Code product documentation
     url: https://docs.claude.com/en/docs/claude-code
-    about: Questions about how Claude Code itself works belong in the official documentation, which is the source of truth.
+    about: How Claude Code itself works is documented upstream, and that is the source of truth.
+
   - name: Claude Code bug reports
     url: https://github.com/anthropics/claude-code/issues
-    about: Bugs in the Claude Code CLI should be reported upstream, not here.
+    about: Bugs in the CLI belong upstream, not here.
+
   - name: Contribution guide
     url: https://github.com/rajtiwariyng/claude-code-playbook/blob/main/CONTRIBUTING.md
     about: Read this before proposing an entry or opening a pull request.
+
+  - name: Report a security concern
+    url: https://github.com/rajtiwariyng/claude-code-playbook/security/advisories/new
+    about: Private disclosure. Defective security guidance counts — see SECURITY.md.

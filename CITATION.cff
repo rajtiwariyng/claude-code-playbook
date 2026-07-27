@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+title: Claude Code Playbook
+message: >-
+  If you reference this repository in documentation, training material,
+  or research, please cite it using these metadata.
+type: dataset
+authors:
+  - name: Claude Code Playbook contributors
+    website: https://github.com/rajtiwariyng/claude-code-playbook
+repository-code: https://github.com/rajtiwariyng/claude-code-playbook
+url: https://github.com/rajtiwariyng/claude-code-playbook
+abstract: >-
+  A production-grade knowledge base for driving Claude Code across software,
+  design, business, and documentation work. Each entry documents the reasoning
+  behind a task, the workflow it belongs to, the output to expect, and the
+  objective checks that determine whether the result is good enough to ship.
+  An independent community project, not affiliated with or endorsed by
+  Anthropic.
+keywords:
+  - claude-code
+  - prompt-engineering
+  - ai-assisted-development
+  - documentation
+  - software-engineering
+  - developer-tools
+license: MIT
+version: 1.0.0
+date-released: '2026-07-27'
