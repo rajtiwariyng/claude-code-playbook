@@ -49,7 +49,7 @@ The [folder ownership rules](../CONTRIBUTING.md#folder-ownership) define which f
 | [web/landing-pages/](web/landing-pages/) | Single-goal conversion pages | Planned — v1.1 |
 | [web/dashboards/](web/dashboards/) | Internal applications, admin panels, CRM, ERP | Planned — v1.1 |
 | [web/ui-ux/](web/ui-ux/) | Visual and interaction design | Planned — v1.1 |
-| [business/company-profile/](business/company-profile/) | Company profile documents | Planned — v1.1 |
+| [business/company-profile/](business/company-profile/) | Company profile documents and the evidence behind them | **Complete** — 5 entries |
 | [business/presentations/](business/presentations/) | All slide-based deliverables | Planned — v1.1 |
 | [business/sales/](business/sales/) | Sales narrative and collateral | Planned — v1.1 |
 | [business/proposal/](business/proposal/) | Priced, scoped client offers | Planned — v1.1 |
@@ -89,9 +89,13 @@ Every published entry, alphabetically. This is the index to search when you know
 | --- | --- | --- |
 | [agency-website](web/websites/agency-website.md) | web/websites | Service business site where the work is the argument |
 | [booking-website](web/websites/booking-website.md) | web/websites | Hotels, restaurants, clinics — availability-led sites |
+| [capability-statement](business/company-profile/capability-statement.md) | business/company-profile | One page answering one buyer's specific question |
+| [case-study-library](business/company-profile/case-study-library.md) | business/company-profile | **Evidence base** — and the disclosure permissions that make it usable |
 | [code-reviewer](core/system/code-reviewer.md) | core/system | Review role: finds defects, does not fix them |
+| [company-profile-document](business/company-profile/company-profile-document.md) | business/company-profile | The long-form profile, built to survive scrutiny |
 | [competitor-analysis](core/research/competitor-analysis.md) | core/research | What competitors actually do, from public evidence |
 | [corporate-website](web/websites/corporate-website.md) | web/websites | Multi-audience site built to survive due diligence |
+| [credentials-deck](business/company-profile/credentials-deck.md) | business/company-profile | Profile material presented rather than read |
 | [fact-checking](core/research/fact-checking.md) | core/research | Auditing claims in an existing document |
 | [marketplace-website](web/websites/marketplace-website.md) | web/websites | Two-sided platform with a cold-start problem |
 | [market-research](core/research/market-research.md) | core/research | Sizing demand with honest confidence |
@@ -105,6 +109,7 @@ Every published entry, alphabetically. This is the index to search when you know
 | [senior-engineer](core/system/senior-engineer.md) | core/system | Implementation role: boring, correct, maintainable |
 | [software-architect](core/system/software-architect.md) | core/system | Decision role: boundaries and trade-offs |
 | [source-validation](core/research/source-validation.md) | core/research | Should I trust this source? |
+| [team-profile](business/company-profile/team-profile.md) | business/company-profile | Named-people biographies as delivery evidence |
 | [technical-research](core/research/technical-research.md) | core/research | Real capabilities and limits of a technology |
 | [technical-writer](core/system/technical-writer.md) | core/system | Documentation role: deletes more than it adds |
 | [user-research](core/research/user-research.md) | core/research | What users do, as distinct from what they say |

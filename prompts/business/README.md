@@ -6,7 +6,7 @@ Client-facing and commercial deliverables: profiles, decks, sales material, and 
 
 | Folder | Owns | Status |
 | --- | --- | --- |
-| [company-profile/](company-profile/) | Company profile documents | Planned v1.1 |
+| [company-profile/](company-profile/) | Company profile documents and the evidence behind them | **Complete** — 5 entries |
 | [presentations/](presentations/) | All slide-based deliverables | Planned v1.1 |
 | [sales/](sales/) | Sales narrative and collateral | Planned v1.1 |
 | [proposal/](proposal/) | Priced, scoped client offers | Planned v1.1 |
