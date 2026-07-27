@@ -1,4 +1,4 @@
-﻿# Shopify
+# Shopify
 
 Themes, apps, and storefront customisation.
 

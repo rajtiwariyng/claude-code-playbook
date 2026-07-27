@@ -1,4 +1,4 @@
-﻿# Video
+# Video
 
 Video production, delivery, and accessibility.
 

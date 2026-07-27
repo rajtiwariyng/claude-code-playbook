@@ -1,0 +1,45 @@
+name: Audit
+
+# A documented standard that nothing checks drifts within a release.
+# These jobs are the reason docs/Style-Guide.md stays true.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  links:
+    name: Link integrity
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Verify every relative link resolves
+        shell: pwsh
+        run: ./scripts/check-links.ps1
+
+  standards:
+    name: Published standards
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Audit against docs/Style-Guide.md and CONTRIBUTING.md
+        shell: pwsh
+        run: ./scripts/audit.ps1
+
+  markdown:
+    name: Markdown lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: markdownlint
+        uses: DavidAnson/markdownlint-cli2-action@v16
+        with:
+          globs: '**/*.md'

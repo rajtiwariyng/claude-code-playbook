@@ -1,4 +1,4 @@
-﻿# API Design
+# API Design
 
 REST and GraphQL contract design, versioning, and documentation.
 

@@ -84,7 +84,7 @@ Every file under `prompts/` has the same ten sections. Here is what each is for,
 | **When to Use** | Tells you if a different entry fits better | Read it |
 | **Inputs Required** | What to gather before starting | **Never skip.** Missing inputs are the top cause of generic output |
 | **Workflow** | The ordered stages | Read it — it tells you where to intervene |
-| **Claude Prompt** | The copy-paste block | Obviously |
+| **Claude Prompt** | The copy-paste block | No — it is the thing you came for |
 | **Expected Output** | Lets you recognise a wrong result | **Never skip.** This is your comparison baseline |
 | **Quality Checklist** | Objective pass/fail | **Never skip.** Without it you are guessing |
 | **Common Mistakes** | Known failure modes | Read it before, not after |

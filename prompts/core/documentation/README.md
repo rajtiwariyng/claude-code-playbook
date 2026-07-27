@@ -1,4 +1,4 @@
-﻿# Documentation
+# Documentation
 
 READMEs, API reference, runbooks, and architecture records.
 

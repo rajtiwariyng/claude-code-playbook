@@ -1,4 +1,4 @@
-﻿# Landing Pages
+# Landing Pages
 
 Single-goal conversion pages, where one page carries one argument for one audience.
 

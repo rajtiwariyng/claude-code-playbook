@@ -1,4 +1,4 @@
-﻿# Security
+# Security
 
 **All security guidance in this repository.** Every other folder links here rather than restating it.
 

@@ -56,7 +56,7 @@ This repository takes positions. "It depends" is only acceptable when followed b
 
 ## Document Structure
 
-Every file follows this order:
+Every **content file** follows this order:
 
 ```markdown
 # Title                          ← One H1, matches the filename in meaning
@@ -77,6 +77,18 @@ One-paragraph statement of what this is and who it is for.
 ```
 
 Files under `prompts/` additionally use the ten mandatory sections defined in [CONTRIBUTING.md](../CONTRIBUTING.md#the-ten-section-entry-structure), between the intro and `## Related`.
+
+### Which files this applies to
+
+| Applies | Exempt |
+| --- | --- |
+| Everything in `docs/` | `CHANGELOG.md` — its structure is set by [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) |
+| Every entry and folder index under `prompts/` | `CODE_OF_CONDUCT.md` — its structure is set by the Contributor Covenant |
+| `README.md` in each top-level folder | `LICENSE` |
+| Root `README.md`, `CONTRIBUTING.md`, `ROADMAP.md` | Anything under `.github/` — these are forms, not documents |
+| | `templates/prompt-template.md` — it *is* the skeleton |
+
+Exempt files follow an external standard whose structure is more valuable than internal consistency. Overriding a recognised format to satisfy a house rule makes the file harder to read for everyone who already knows the format.
 
 ## Headings
 
@@ -149,7 +161,19 @@ Rules:
 
 ## Callouts
 
-GitHub alert syntax only. **Maximum three per file** — a page of callouts is a page with no emphasis.
+GitHub alert syntax only.
+
+**Budget: roughly one callout per 75 lines — minimum three, maximum six.** A page of callouts is a page with no emphasis: the reader stops seeing them, which costs you the one place you genuinely needed to interrupt them.
+
+| File length | Callout budget |
+| --- | --- |
+| Up to 225 lines | 3 |
+| 226–375 lines | 4–5 |
+| Over 375 lines | 6, hard maximum |
+
+The floor of three exists because even a short page can legitimately need a status banner, a usage warning, and a safety notice. The ceiling is absolute.
+
+The budget is a ceiling, not a target. Most files sit below it. Enforced by [`scripts/audit.ps1`](../scripts/audit.ps1).
 
 ```markdown
 > [!NOTE]
@@ -292,6 +316,18 @@ British English (`optimise`, `behaviour`, `licence` as a noun). **Exception:** t
 | "should probably" | Undermines the guidance | Take a position |
 | "state-of-the-art", "cutting-edge" | Ages badly, means nothing | Name the specific capability |
 | "delve", "tapestry", "landscape" | Recognisably generated filler | Delete |
+
+### What the ban does not cover
+
+These rules target the word's **function**, not the letters. Three legitimate uses:
+
+| Legitimate | Why it is fine |
+| --- | --- |
+| "the highest-leverage habit" | A compound noun, not the verb. The banned form is "leverage our expertise" |
+| "a claim that sounds obviously true" | Describing a property of the claim, not condescending to the reader |
+| Quoting a banned phrase as an example of bad writing | Every entry that teaches this rule has to name what it bans |
+
+The test: **is the word doing work, or filling space?** "Simply run the migration" fills space. "The two simply do not match" also fills space. "Simple majority" is doing work.
 
 ## File Naming
 

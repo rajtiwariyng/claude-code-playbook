@@ -1,4 +1,4 @@
-﻿# WordPress
+# WordPress
 
 Themes, plugins, block development, and hardening.
 

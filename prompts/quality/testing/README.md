@@ -1,4 +1,4 @@
-﻿# Testing
+# Testing
 
 Test strategy, coverage, and test quality.
 

@@ -1,4 +1,4 @@
-﻿# Images
+# Images
 
 Sourcing, licensing, generation, and optimisation.
 

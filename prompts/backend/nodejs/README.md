@@ -1,4 +1,4 @@
-﻿# Node.js
+# Node.js
 
 Node.js services, tooling, and runtime concerns.
 

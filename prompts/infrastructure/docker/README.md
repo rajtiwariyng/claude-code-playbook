@@ -1,4 +1,4 @@
-﻿# Docker
+# Docker
 
 Containerisation for development and production.
 

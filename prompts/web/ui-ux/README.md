@@ -1,4 +1,4 @@
-﻿# UI and UX Design
+# UI and UX Design
 
 Visual and interaction design decisions for any surface.
 

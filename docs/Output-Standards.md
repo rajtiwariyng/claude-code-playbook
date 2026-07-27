@@ -96,8 +96,7 @@ Full treatment: [prompts/quality/accessibility/](../prompts/quality/accessibilit
 | Interaction to Next Paint (INP) | ≤ 200ms | 75th percentile, field data |
 | Cumulative Layout Shift (CLS) | ≤ 0.1 | 75th percentile, field data |
 
-> [!NOTE]
-> Lab tools (Lighthouse) approximate; field data (CrUX, RUM) decides. A perfect Lighthouse score with poor field data means your users' conditions differ from your test conditions — and your users are right.
+**Lab tools approximate; field data decides.** Lighthouse gives you a repeatable signal on your own machine. CrUX and real-user monitoring tell you what happened to actual users. A perfect Lighthouse score alongside poor field data means your test conditions differ from your users' conditions — and your users are right.
 
 ### General
 
@@ -192,8 +191,7 @@ Both are referenced throughout this repository, and both are commonly over-appli
 | Consistent | Same element behaves identically everywhere |
 | Performant | Fonts and images are budgeted; decorative assets justify their weight |
 
-> [!NOTE]
-> Empty and error states are the most commonly skipped deliverable in design work, and the states users hit when they are already frustrated. Design them first if you want to know whether the design actually works.
+**Design the empty and error states first.** They are the most commonly skipped deliverable in design work, and the states users reach when they are already frustrated. A design that only works on the happy path has not been tested against the cases that decide whether people keep using it.
 
 ## Content Standards
 

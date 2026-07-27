@@ -1,4 +1,4 @@
-﻿# Backend
+# Backend
 
 Server-side application work, API contracts, and data.
 

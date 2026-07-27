@@ -1,4 +1,4 @@
-﻿# Next.js
+# Next.js
 
 Framework-specific concerns only: routing, rendering strategy, server components, and data loading.
 

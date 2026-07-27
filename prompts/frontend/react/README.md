@@ -1,4 +1,4 @@
-﻿# React
+# React
 
 React architecture, state, performance, and component design.
 

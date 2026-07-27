@@ -1,4 +1,4 @@
-﻿# Quality
+# Quality
 
 The cross-cutting standards every other domain must meet.
 

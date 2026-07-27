@@ -1,4 +1,4 @@
-﻿# SEO
+# SEO
 
 Traditional search optimisation.
 

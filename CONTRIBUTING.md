@@ -66,7 +66,7 @@ The domain grouping under `prompts/` exists to prevent duplication. Several topi
 | Traditional search optimisation | `growth/seo` | — |
 | Optimisation for AI answer engines | `growth/geo` | `growth/seo` links to it; the two must not restate each other's tactics |
 | Written long-form content | `growth/blogs` | `growth/seo` links to it |
-| Cross-platform mobile concerns | `mobile/mobile` | `mobile/flutter` links to it and covers only Flutter-specific concerns |
+| Cross-platform mobile concerns | `mobile/cross-platform` | `mobile/flutter` links to it and covers only Flutter-specific concerns |
 | Slide-based deliverables of any kind | `business/presentations` | `business/company-profile` and `business/sales` link to it |
 | Priced, scoped client offer | `business/proposal` | `business/sales` links to it |
 | Security topics of any kind | `quality/security` | Every other folder links to it rather than restating security rules |

@@ -74,7 +74,7 @@ The [folder ownership rules](../CONTRIBUTING.md#folder-ownership) define which f
 | [growth/seo/](growth/seo/) | Traditional search optimisation | Planned — v1.1 |
 | [growth/geo/](growth/geo/) | Generative engine optimisation | Planned — v1.2 |
 | [growth/blogs/](growth/blogs/) | Long-form written content | Planned — v1.2 |
-| [mobile/mobile/](mobile/mobile/) | Cross-platform mobile concerns | Planned — v1.2 |
+| [mobile/cross-platform/](mobile/cross-platform/) | Cross-platform mobile concerns | Planned — v1.2 |
 | [mobile/flutter/](mobile/flutter/) | Flutter-specific concerns | Planned — v1.2 |
 | [media/images/](media/images/) | Image sourcing, generation, optimisation | Planned — v1.2 |
 | [media/videos/](media/videos/) | Video production and delivery | Planned — v1.3 |
@@ -161,3 +161,10 @@ The canonical skeleton is [templates/prompt-template.md](../templates/prompt-tem
 - [../CONTRIBUTING.md](../CONTRIBUTING.md) — folder ownership rules and how to add an entry
 - [../ROADMAP.md](../ROADMAP.md) — what ships when
 - [../templates/prompt-template.md](../templates/prompt-template.md) — the entry skeleton
+
+## References
+
+- [Claude Code documentation](https://docs.claude.com/en/docs/claude-code) — official product documentation
+- [WCAG 2.2](https://www.w3.org/TR/WCAG22/) — the accessibility baseline every entry enforces
+- [OWASP Top 10](https://owasp.org/Top10/) — the security baseline every entry enforces
+- [Core Web Vitals](https://web.dev/articles/vitals) — the performance baseline every entry enforces

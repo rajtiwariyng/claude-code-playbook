@@ -1,4 +1,4 @@
-﻿# Database
+# Database
 
 Schema design, indexing, migrations, and query performance.
 

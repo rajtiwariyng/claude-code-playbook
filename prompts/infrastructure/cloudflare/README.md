@@ -1,4 +1,4 @@
-﻿# Cloudflare
+# Cloudflare
 
 Edge configuration, DNS, WAF, and Workers.
 
