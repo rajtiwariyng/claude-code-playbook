@@ -17,7 +17,7 @@ jobs:
     name: Link integrity
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Verify every relative link resolves
         shell: pwsh
@@ -27,7 +27,7 @@ jobs:
     name: Published standards
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Audit against docs/Style-Guide.md and CONTRIBUTING.md
         shell: pwsh
@@ -37,7 +37,7 @@ jobs:
     name: Markdown lint
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: markdownlint
         uses: DavidAnson/markdownlint-cli2-action@v16
