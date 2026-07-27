@@ -65,7 +65,7 @@ On first run, `claude` walks you through authentication. Two options:
 | **API key** via [Claude Console](https://console.anthropic.com) | Teams needing usage attribution and spend controls | Metered per token |
 
 > [!CAUTION]
-> Never commit an API key. Never paste one into a `CLAUDE.md`, a prompt, or an issue. If a key is exposed, revoke it in the Console immediately — rotating is cheap, a leaked key is not. See [prompts/quality/security/secrets-management.md](../prompts/quality/security/secrets-management.md).
+> Never commit an API key. Never paste one into a `CLAUDE.md`, a prompt, or an issue. If a key is exposed, revoke it in the Console immediately — rotating is cheap, a leaked key is not. See [prompts/quality/security/](../prompts/quality/security/).
 
 ## Verifying the Install
 
@@ -298,7 +298,7 @@ For anything not listed here, run `claude doctor` first, then check [the officia
 - [Claude-Code-Best-Practices.md](Claude-Code-Best-Practices.md) — daily working habits
 - [AI-Agent-Workflow.md](AI-Agent-Workflow.md) — chaining entries and turning them into commands
 - [snippets/](../snippets/) — reusable `CLAUDE.md` blocks by project type
-- [prompts/quality/security/secrets-management.md](../prompts/quality/security/secrets-management.md) — handling credentials
+- [prompts/quality/security/](../prompts/quality/security/) — handling credentials
 
 ## References
 

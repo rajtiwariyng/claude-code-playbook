@@ -179,7 +179,7 @@ Contributions are welcome, and reviewed against the same standards the content t
 
 Active. Versioned with [Semantic Versioning](https://semver.org/); see [CHANGELOG.md](CHANGELOG.md) for release history and [ROADMAP.md](ROADMAP.md) for planned work.
 
-This repository documents patterns for using Claude Code. It is an independent community project and is not affiliated with or endorsed by Anthropic. Claude Code's own behaviour, flags, and configuration are documented at [docs.claude.com](https://docs.claude.com/en/docs/claude-code) — treat that as the source of truth when it disagrees with anything here, and please [open an issue](../../issues) so we can correct it.
+This repository documents patterns for using Claude Code. It is an independent community project and is not affiliated with or endorsed by Anthropic. Claude Code's own behaviour, flags, and configuration are documented at [docs.claude.com](https://docs.claude.com/en/docs/claude-code) — treat that as the source of truth when it disagrees with anything here, and please [open an issue](https://github.com/rajtiwariyng/claude-code-playbook/issues) so we can correct it.
 
 ## References
 
