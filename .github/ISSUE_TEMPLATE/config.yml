@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Claude Code product documentation
+    url: https://docs.claude.com/en/docs/claude-code
+    about: Questions about how Claude Code itself works belong in the official documentation, which is the source of truth.
+  - name: Claude Code bug reports
+    url: https://github.com/anthropics/claude-code/issues
+    about: Bugs in the Claude Code CLI should be reported upstream, not here.
+  - name: Contribution guide
+    url: https://github.com/rajtiwariyng/claude-code-playbook/blob/main/CONTRIBUTING.md
+    about: Read this before proposing an entry or opening a pull request.
