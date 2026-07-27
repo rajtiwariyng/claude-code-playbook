@@ -35,6 +35,7 @@ The two highlighted documents change how everything else lands. If you read noth
 | [Claude-Code-Best-Practices.md](Claude-Code-Best-Practices.md) | You are using Claude Code daily and want to work faster with fewer corrections | 30 min |
 | [Output-Standards.md](Output-Standards.md) | You need a shared definition of "production-ready" | 20 min |
 | [Style-Guide.md](Style-Guide.md) | You are contributing to this repository | 15 min |
+| [Publishing.md](Publishing.md) | You are wondering why Pages is off and the Wiki is disabled | 10 min |
 | [FAQ.md](FAQ.md) | You have a specific question | As needed |
 
 ## What These Documents Assume

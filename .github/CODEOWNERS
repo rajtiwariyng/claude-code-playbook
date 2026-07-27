@@ -1,0 +1,24 @@
+# Code owners are requested for review automatically on any pull request
+# touching the paths below.
+#
+# Syntax: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Default owner for everything not matched below.
+*                       @rajtiwariyng
+
+# The standards themselves. Changing these changes every file in the
+# repository, so they get reviewed as a policy change rather than an edit.
+/docs/Style-Guide.md    @rajtiwariyng
+/docs/Output-Standards.md @rajtiwariyng
+/CONTRIBUTING.md        @rajtiwariyng
+
+# Enforcement. A weakened check is indistinguishable from a passing repository.
+/scripts/               @rajtiwariyng
+/.github/workflows/     @rajtiwariyng
+
+# Taxonomy. Folder structure is a public API here; renames break deep links.
+/prompts/README.md      @rajtiwariyng
+
+# Security guidance. Wrong advice here is worse than none.
+/prompts/quality/security/ @rajtiwariyng
+/SECURITY.md            @rajtiwariyng

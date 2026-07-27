@@ -1,0 +1,18 @@
+version: 2
+
+# This repository ships no application dependencies. The only versioned
+# externals are the GitHub Actions used by the audit workflow, and a pinned
+# action that silently goes stale is how a supply-chain issue arrives in a
+# repository that thought it had no dependencies.
+
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
+    commit-message:
+      prefix: chore
+      include: scope
+    labels:
+      - dependencies
+    open-pull-requests-limit: 5

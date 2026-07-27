@@ -1,0 +1,44 @@
+# Jekyll configuration for optional GitHub Pages publishing.
+#
+# NOT enabled by default. This repository is designed to be read on
+# github.com, where relative .md links and Mermaid diagrams both work
+# without a build step.
+#
+# Read docs/Publishing.md before enabling Pages. Two things break:
+#   1. ~1,300 relative .md links resolve differently under Jekyll
+#   2. Mermaid diagrams do not render without a plugin
+#
+# Enabling Pages without addressing both produces a site with broken
+# navigation and missing diagrams, which is worse than no site.
+
+title: Claude Code Playbook
+description: >-
+  A production-grade knowledge base for driving Claude Code across software,
+  design, business, and documentation work.
+theme: jekyll-theme-primer
+
+# Preserve link text as authored. Requires the jekyll-relative-links plugin,
+# which GitHub Pages supports natively.
+plugins:
+  - jekyll-relative-links
+  - jekyll-optional-front-matter
+  - jekyll-titles-from-headings
+
+relative_links:
+  enabled: true
+  collections: true
+
+# Repository machinery that is not documentation.
+exclude:
+  - scripts/
+  - .github/
+  - .editorconfig
+  - .gitattributes
+  - .markdownlint.json
+  - CITATION.cff
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+
+# Keep the reader on the source of truth.
+show_downloads: false

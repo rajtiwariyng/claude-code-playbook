@@ -9,6 +9,24 @@
 
 This is not a prompt dump. It is a **playbook**: every entry carries the reasoning behind it, the workflow it belongs to, the output you should expect, and the checks that tell you whether the result is good enough to ship.
 
+```mermaid
+flowchart LR
+    subgraph P["A prompt list gives you"]
+        A["The prompt text"]
+    end
+    subgraph E["An entry here gives you"]
+        B["Inputs to gather first"] --> C["Ordered workflow"]
+        C --> D["The prompt"]
+        D --> F["What correct output looks like"]
+        F --> G["Objective pass/fail checklist"]
+        G --> H["The documented ways this fails"]
+    end
+    A -.->|"the least valuable part"| D
+
+    style A fill:#7a3b3b,color:#fff
+    style D fill:#2d5f8b,color:#fff
+```
+
 ---
 
 ## Table of Contents
@@ -179,6 +197,17 @@ Contributions are welcome, and reviewed against the same standards the content t
 - Entries that duplicate an existing topic will be redirected to improving that entry instead.
 - Factual claims need a citable source. "It works on my machine" is a valid observation, not a documented behaviour.
 
+**The most valuable contribution is a report that an entry did not work.** Include what you asked, what you got, and what you expected. Those reports are the rarest and the most useful — everything else is easier to write and tells us less.
+
+| I want to | Go to |
+| --- | --- |
+| Report something wrong or stale | [Open an issue](https://github.com/rajtiwariyng/claude-code-playbook/issues/new/choose) → *Entry defect* |
+| Propose a new entry | [Open an issue](https://github.com/rajtiwariyng/claude-code-playbook/issues/new/choose) → *New entry proposal* |
+| Ask how to do something | [Discussions → Q&A](https://github.com/rajtiwariyng/claude-code-playbook/discussions) |
+| Share a prompt that worked, or failed | [Discussions → Show and tell](https://github.com/rajtiwariyng/claude-code-playbook/discussions) |
+| Disagree with a recommendation | [Discussions → Ideas](https://github.com/rajtiwariyng/claude-code-playbook/discussions) |
+| Report a security concern | [SECURITY.md](SECURITY.md) |
+
 ## Project Status
 
 Active. Versioned with [Semantic Versioning](https://semver.org/); see [CHANGELOG.md](CHANGELOG.md) for release history and [ROADMAP.md](ROADMAP.md) for planned work.
@@ -193,8 +222,11 @@ This repository documents patterns for using Claude Code. It is an independent c
 | [docs/Prompting-Guide.md](docs/Prompting-Guide.md) | Output is generic and you do not know why |
 | [prompts/README.md](prompts/README.md) | You know the topic but not the folder |
 | [CONTRIBUTING.md](CONTRIBUTING.md) | You want to add or fix an entry |
+| [SUPPORT.md](SUPPORT.md) | You have a question and want it to reach the right place |
+| [SECURITY.md](SECURITY.md) | You found a secret, or guidance that would create a vulnerability |
 | [ROADMAP.md](ROADMAP.md) | You want to know what ships when |
 | [CHANGELOG.md](CHANGELOG.md) | You want to know what has already shipped |
+| [docs/Publishing.md](docs/Publishing.md) | You want to know why Pages is off and the Wiki is disabled |
 
 ## References
 
