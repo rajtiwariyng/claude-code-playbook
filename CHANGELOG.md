@@ -47,20 +47,34 @@ Initial public release.
   `Research-Framework.md`, `Thinking-Framework.md`, `AI-Agent-Workflow.md`, `Output-Standards.md`,
   `Style-Guide.md`, and `FAQ.md`.
 
-**Playbook entries (`prompts/`)**
+**Playbook entries (`prompts/`) — 23 entries published**
 
-- Domain-grouped structure: `core`, `business`, `web`, `frontend`, `backend`, `cms-commerce`,
-  `infrastructure`, `quality`, `growth`, `mobile`, `media`, and `industries`.
+- `core/system/` — 9 entries. `role-composition`, `output-contract`, `project-constitution`,
+  and six roles: `senior-engineer`, `software-architect`, `code-reviewer`, `security-engineer`,
+  `ux-designer`, `technical-writer`, `research-analyst`.
+- `core/research/` — 6 entries. `technical-research`, `competitor-analysis`, `market-research`,
+  `user-research`, `source-validation`, `fact-checking`.
+- `web/websites/` — 8 entries. `website-architecture` as the base entry, six archetypes
+  (`corporate`, `agency`, `saas`, `marketplace`, `portfolio`, `booking`), and `website-audit`.
+
+**Taxonomy and navigation**
+
+- Domain-grouped structure across `core`, `business`, `web`, `frontend`, `backend`,
+  `cms-commerce`, `infrastructure`, `quality`, `growth`, `mobile`, `media`, `mcp`,
+  and `industries`.
 - Flat A–Z index at `prompts/README.md` so the grouping never costs discoverability.
+- An index for every folder — published or planned — stating its scope, ownership
+  boundaries, planned entries, and target milestone.
+- `assets/` — image sourcing and licensing policy, plus diagram conventions.
+- `templates/prompt-template.md` — the canonical ten-section entry skeleton.
+- `scripts/check-links.ps1` — verifies every relative link resolves. 1,260 checked, 0 broken.
 
-**Supporting material**
+**Planned but not yet written**
 
-- `templates/` — document and configuration skeletons, including the canonical entry template.
-- `examples/` — complete worked runs showing input, workflow, and output.
-- `checklists/` — pre-flight and pre-ship verification lists.
-- `frameworks/` — reusable mental models for research, planning, shipping, and review.
-- `snippets/` — reusable prompt fragments and `CLAUDE.md` blocks.
-- `assets/` — diagrams plus the image sourcing and licensing policy.
+`checklists/`, `examples/`, `frameworks/`, `snippets/`, `agents/`, and the remaining
+`prompts/` folders have indexes describing their intended scope but contain no entries.
+They are listed here so the gap is explicit rather than discovered. See
+[ROADMAP.md](ROADMAP.md) for target milestones.
 
 ### Design decisions
 
@@ -70,7 +84,16 @@ Initial public release.
 - **Adopted a single mandatory entry structure.** Uniformity is what makes a hundred files feel like
   one book rather than a hundred blog posts.
 - **Declared external links a public API.** Deep links into this repository are load-bearing for
-  anyone who bookmarks or cites an entry, so breaking one is a major version bump.
+  anyone who bookmarks or cites an entry, so breaking one is a major version bump. Enforced by
+  `scripts/check-links.ps1`.
+- **Merged Hotel and Restaurant into one `booking-website` entry.** They share one reservation
+  model; the differences are content, not structure.
+- **Made industries constraint overlays rather than archetypes.** A healthcare corporate site
+  and a manufacturing corporate site share their entire information architecture. As separate
+  entries, every improvement to corporate structure would need making twice and would not be.
+- **Shipped indexes for unwritten folders rather than placeholder entries.** An empty folder
+  with an honest index is better than one padded with thin content, and it makes the taxonomy
+  reviewable before the entries are written.
 
 ---
 
