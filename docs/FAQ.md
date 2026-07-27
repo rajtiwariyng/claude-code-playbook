@@ -264,7 +264,19 @@ Improve the existing entry instead. A near-duplicate is worse than a gap, becaus
 
 ### Can I contribute an entry I have not actually used?
 
-No. The Example and Common Mistakes sections are the ones that make an entry trustworthy, and they cannot be written from imagination. An entry drafted but never run reads plausible and fails in practice â€” which is exactly the failure mode this repository exists to counter.
+You can, but you must label it. Every `## Example` declares `Provenance: real run.` or `Provenance: constructed.` — see [the provenance rule](../CONTRIBUTING.md#example-provenance-is-mandatory).
+
+A constructed example is legitimate and sometimes clearer, because it isolates the pattern without a real project's noise. What is never legitimate is a constructed example that claims an observation — "effect observed", a before/after comparison, "in testing this produced". Those are empirical claims, and an empirical claim with no run behind it is a fabrication however plausible it reads.
+
+Be aware that Common Mistakes is much harder to write honestly without real use. A table of invented failure modes is visible to reviewers and is the most common reason an otherwise good entry is sent back.
+
+### Are the examples in this repository real runs?
+
+Mostly not, and every one of them says so. Entries shipped in 1.0.0 carry `Provenance: constructed` because they were written to demonstrate their pattern rather than transcribed from a project.
+
+This is disclosed rather than quietly omitted for a specific reason: 1.0.0 originally shipped one example claiming "Effect observed" with no run behind it. It was caught in review, corrected, and the provenance rule exists because of it. A repository that publishes a sourcing standard and then violates it is worth less than one with no standard at all.
+
+Contributed real runs are welcome and rank above constructed ones.
 
 ### What is the most valuable contribution?
 

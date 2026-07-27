@@ -10,6 +10,8 @@
       STRUCTURE  exactly one H1; no skipped heading levels; unique headings
       SECTIONS   every file ends with Related and References
       ENTRIES    files under prompts/ carry all ten mandatory sections in order
+      PROVENANCE every Example declares real run or constructed, and a
+                 constructed example never claims an observation
       CODE       every fenced block is language-tagged
       CALLOUTS   at most three GitHub alerts per file; only valid alert types
       WORDS      no terms from the Style Guide avoid list
@@ -28,7 +30,7 @@
 [CmdletBinding()]
 param(
     [string]$Root = (Split-Path $PSScriptRoot -Parent),
-    [string[]]$Check = @('STRUCTURE','SECTIONS','ENTRIES','CODE','CALLOUTS','WORDS','TERMS','NAMING','WHITESPACE')
+    [string[]]$Check = @('STRUCTURE','SECTIONS','ENTRIES','PROVENANCE','CODE','CALLOUTS','WORDS','TERMS','NAMING','WHITESPACE')
 )
 
 $findings = [System.Collections.Generic.List[psobject]]::new()
@@ -157,6 +159,36 @@ foreach ($file in $files) {
                 Add-Finding $rel 'ENTRIES' 0 "Section '## $required' is out of the mandated order"
             } else {
                 $idx = $pos
+            }
+        }
+    }
+
+    # ---------- PROVENANCE ----------
+    # Every Example declares whether it is a real run or constructed, and a
+    # constructed example must never claim an observation. Version 1.0.0
+    # shipped an example claiming "Effect observed" with no run behind it;
+    # this check exists so that cannot recur silently.
+    if ($Check -contains 'PROVENANCE' -and $isEntry) {
+        if ($prose -match '(?m)^## Example\s*$') {
+            $hasLabel = $prose -match '(?m)^>\s\*\*Provenance:\*\*\s+(real run|constructed)\.'
+            if (-not $hasLabel) {
+                Add-Finding $rel 'PROVENANCE' 0 'Example has no "> **Provenance:** real run." or "constructed." label'
+            }
+
+            if ($prose -match '(?m)^>\s\*\*Provenance:\*\*\s+constructed\.') {
+                $claims = @(
+                    'effect observed', 'we measured', 'in testing this',
+                    'observed result', 'when we ran', 'in practice this produced'
+                )
+                foreach ($c in $claims) {
+                    $n = 0
+                    foreach ($line in $lines) {
+                        $n++
+                        if ($line -match "(?i)\b$([regex]::Escape($c))\b") {
+                            Add-Finding $rel 'PROVENANCE' $n "Constructed example claims an observation: '$c'"
+                        }
+                    }
+                }
             }
         }
     }

@@ -99,8 +99,24 @@ Every file under `prompts/` uses these ten sections, in this order, with no omis
 | 6 | `## Expected Output` | The shape of a correct result, specific enough to detect a wrong one. |
 | 7 | `## Quality Checklist` | Task-list checkboxes. Objective, pass/fail, no "is it good?" items. |
 | 8 | `## Common Mistakes` | Table with `Mistake`, `Why it happens`, `Fix`. Minimum three rows. |
-| 9 | `## Example` | A concrete filled-in run with realistic inputs and abbreviated output. |
+| 9 | `## Example` | A concrete filled-in run with realistic inputs and abbreviated output. **Must declare its provenance** — see below. |
 | 10 | `## Advanced Version` | The higher-effort variant, and when the extra cost is justified. |
+
+### Example provenance is mandatory
+
+Every `## Example` opens with one of exactly two labels. There is no third option and no unlabelled example.
+
+| Label | Means | You may write |
+| --- | --- | --- |
+| `> **Provenance:** real run.` | You executed this against a real project | "The review found…", "this surfaced…", measured results |
+| `> **Provenance:** constructed.` | Inputs and output are written to demonstrate the pattern | What the prompt *does*, why each part is there, what to check |
+
+**A constructed example must never claim an observation.** No "effect observed", no before/after comparison, no "in testing this produced". Those are empirical claims, and an empirical claim without a run behind it is a fabrication regardless of how plausible it is.
+
+Constructed examples are legitimate and often clearer — they can isolate the pattern without a real project's noise. What is never legitimate is letting a reader believe a constructed illustration was measured.
+
+> [!IMPORTANT]
+> This is the rule most likely to get a pull request rejected, and the one this repository has itself violated. Version 1.0.0 shipped an example claiming "Effect observed" with no run behind it. It was caught in review and corrected. Assume your draft has the same defect until you have checked it.
 
 Every file then closes with `## Related` and `## References`.
 

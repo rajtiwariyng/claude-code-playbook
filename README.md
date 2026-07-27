@@ -7,6 +7,9 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![Docs](https://img.shields.io/badge/docs-Getting%20Started-blue.svg)](docs/Getting-Started.md)
 
+> [!IMPORTANT]
+> **Independent community project.** Not affiliated with, endorsed by, or maintained by Anthropic. For how Claude Code itself behaves, [the official documentation](https://docs.claude.com/en/docs/claude-code) is the source of truth and this repository defers to it.
+
 This is not a prompt dump. It is a **playbook**: every entry carries the reasoning behind it, the workflow it belongs to, the output you should expect, and the checks that tell you whether the result is good enough to ship.
 
 ```mermaid

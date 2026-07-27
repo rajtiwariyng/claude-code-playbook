@@ -29,7 +29,8 @@ Confirm each item. Unchecked boxes will delay review.
 - [ ] Every factual claim cites an official source.
 - [ ] The Quality Checklist items are objective and pass/fail, not subjective.
 - [ ] The Common Mistakes come from real observed failures, not invention.
-- [ ] I ran this prompt against a real project (or the Example is clearly labelled illustrative).
+- [ ] The Example carries a `> **Provenance:**` line — `real run.` or `constructed.`
+- [ ] If constructed, the Example makes **no** claim of an observation: no "effect observed", no before/after comparison, no "in testing this produced".
 - [ ] I updated `prompts/README.md` and the folder `README.md`.
 - [ ] I added an entry to `CHANGELOG.md` under `## [Unreleased]`.
 - [ ] Relative links are used for in-repo targets and all links resolve.

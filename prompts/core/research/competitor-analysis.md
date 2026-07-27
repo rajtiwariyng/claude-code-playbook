@@ -168,6 +168,7 @@ It should **not** contain:
 
 ## Example
 
+> **Provenance:** constructed. Inputs and output demonstrate the pattern; this is not a transcript of a real run.
 **Inputs**
 
 | Input | Value |
@@ -177,8 +178,6 @@ It should **not** contain:
 | `{{COMPETITORS}}` | Three named products (anonymised here as A, B, C) |
 | `{{DECISION_IT_INFORMS}}` | Whether to build CIS deduction handling, and how to price |
 | `{{DATE}}` | 2026-07-27 |
-
-*Inputs are constructed for illustration; the pattern is what matters.*
 
 **Abbreviated output**
 

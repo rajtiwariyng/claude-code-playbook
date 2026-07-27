@@ -74,6 +74,8 @@ Target: Q3 2026.
 
 | Item | Rationale | Status |
 | --- | --- | --- |
+| **`core/planning/feature-implementation`** | The most common Claude Code task has no dedicated entry. Currently covered by inference from the senior-engineer role and the workflow chain | **Planned — first** |
+| **Replace constructed examples with real runs** | Every 1.0.0 example is `Provenance: constructed`. Real runs rank above them and are the most wanted contribution | **Planned — first** |
 | Complete every folder to a minimum of four entries | Folders with one entry signal an unfinished taxonomy | Planned |
 | Adversarial review entries for each `quality/` topic | Self-review finds far less than a prompt explicitly told to attack the work | Planned |
 | Worked examples for the ten most-used entries | The Example section is where entries most often go thin | Planned |

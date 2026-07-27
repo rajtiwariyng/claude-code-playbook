@@ -111,6 +111,7 @@ A role is decorative when the output is indistinguishable from the same prompt w
 
 ## Example
 
+> **Provenance:** constructed. Inputs and output demonstrate the pattern; this is not a transcript of a real run.
 **Building a role for reviewing database migrations.**
 
 | Input | Value |
@@ -145,7 +146,9 @@ rows tells you nothing about 40M.
 You commit to a recommendation.
 ```
 
-**Effect observed.** Without the role, review of a `DROP COLUMN` migration returned a syntax check and a note about backing up first. With it, the review split the migration into three deploys, identified that application code still referenced the column, and refused the single-step version outright.
+**What the role is doing here.** The three clauses each rule something out. *Optimises for reversibility* rejects the single-step migration. *Refuses without a rollback path* forces the change to be split. *Knows lock duration causes outages* directs attention to the lock rather than to the statement.
+
+Run the A/B yourself before trusting it: review the same migration with and without the role block. If the two reviews are interchangeable, the role is decorative on your codebase and needs sharpening — that test is the point of this entry, and no published claim substitutes for it.
 
 ## Advanced Version
 

@@ -145,6 +145,7 @@ It should **not** contain:
 
 ## Example
 
+> **Provenance:** constructed. Inputs and output demonstrate the pattern; this is not a transcript of a real run.
 **Task:** "What are the rate limits on the payment provider's refund endpoint, and how should we handle them?"
 
 **Abbreviated output under the contract**
