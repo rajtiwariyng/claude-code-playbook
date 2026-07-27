@@ -1,62 +1,67 @@
 # Company Profile
 
-The company profile document -- capability statements, credentials, and corporate overviews.
+The documents an organisation uses to establish that it is real, capable, and worth the risk.
 
-> [!NOTE]
-> **Status: planned for v1.1.** This folder has no entries yet. Its scope and
-> intended contents are documented below so the taxonomy is stable and links resolve.
-> See [ROADMAP.md](../../../ROADMAP.md) for the release plan.
+## How This Folder Is Organised
 
-## Scope
+[case-study-library.md](case-study-library.md) is the foundation. Every other entry draws on it, and most organisations discover during a bid that their strongest evidence is unusable because nobody ever asked permission to name it.
 
-The company profile document -- capability statements, credentials, and corporate overviews.
+```mermaid
+flowchart TD
+    A[case-study-library<br/>The evidence base] --> B[company-profile-document<br/>Long form, read]
+    A --> C[capability-statement<br/>One page, one opportunity]
+    A --> D[credentials-deck<br/>Presented, not read]
+    E[team-profile] --> B
+    E --> D
 
-> [!IMPORTANT]
-> Slide-based deliverables are owned by [business/presentations/](../presentations/). This folder owns the document form.
+    style A fill:#2d5f8b,color:#fff
+```
 
-## Planned Entries
+**Run [case-study-library.md](case-study-library.md) first if you have never run a disclosure campaign.** The gap between "a UK social housing provider" and a named client is the largest credibility difference available to most organisations, and it costs one email per project.
 
-| Entry | Status |
-| --- | --- |
-| `company-profile-document.md` | Planned |
-| `capability-statement.md` | Planned |
-| `credentials-deck.md` | Planned |
-| `team-profile.md` | Planned |
-| `case-study-library.md` | Planned |
+## Index
 
-Each will be written to the full ten-section structure defined in
-[CONTRIBUTING.md](../../../CONTRIBUTING.md#the-ten-section-entry-structure). None will ship as a stub.
+| Entry | Produces | Read by |
+| --- | --- | --- |
+| [case-study-library.md](case-study-library.md) | The evidence base, with disclosure permissions recorded | Nobody directly — everything else draws on it |
+| [company-profile-document.md](company-profile-document.md) | The long-form profile | Procurement, partners, anyone checking you are real |
+| [capability-statement.md](capability-statement.md) | One page answering one buyer's specific question | A buyer with a specific requirement |
+| [team-profile.md](team-profile.md) | Named-people biographies as delivery evidence | Anyone assessing delivery risk in a small organisation |
+| [credentials-deck.md](credentials-deck.md) | The presented form | A room, plus whoever it is forwarded to |
 
-## Shared Concerns Live Elsewhere
+## The Thread Running Through All Five
 
-Per the [folder ownership rules](../../../CONTRIBUTING.md#folder-ownership), these are never
-restated in this folder:
+**A claim you cannot substantiate on request is an exposure, not an asset.** Every entry here audits claims and cuts what cannot be evidenced rather than softening it into vagueness. A vague claim occupies space and convinces nobody.
+
+The second thread: **name the gap before the reader finds it.** A disqualifier you volunteer and answer is worth more than the same disqualifier discovered at reference stage, where it discredits everything else you said.
+
+## Ownership Boundaries
+
+Per the [folder ownership rules](../../../CONTRIBUTING.md#folder-ownership):
 
 | Concern | Owner |
 | --- | --- |
-| Security | [quality/security/](../../quality/security/) |
-| Performance | [quality/performance/](../../quality/performance/) |
-| Accessibility | [quality/accessibility/](../../quality/accessibility/) |
-| Roles and output contracts | [core/system/](../../core/system/) |
-| Research method | [core/research/](../../core/research/) |
+| Slide construction, narrative arc, deck mechanics | [../presentations/](../presentations/) — `credentials-deck.md` covers only what is profile-specific |
+| Priced, scoped offers | [../proposal/](../proposal/) |
+| Sales narrative and objection handling | [../sales/](../sales/) |
+| The same material as a website | [../../web/websites/corporate-website.md](../../web/websites/corporate-website.md) |
+| Verifying claims before publication | [../../core/research/fact-checking.md](../../core/research/fact-checking.md) |
 
-## Contributing an Entry Here
+## A Note on the Examples
 
-This folder is open for contribution. Open an issue using the **New entry proposal**
-template first -- most rejected pull requests are for duplication or wrong folder, and
-both are cheap to catch before anything is written.
-
-See [CONTRIBUTING.md](../../../CONTRIBUTING.md).
+Every example in this folder carries `Provenance: constructed` — inputs and outputs demonstrate the pattern rather than transcribing a real engagement. They share one fictional organisation so the five entries read as a single body of work. See [the provenance rule](../../../CONTRIBUTING.md#example-provenance-is-mandatory).
 
 ## Related
 
-- [prompts/README.md](../../README.md) -- the full A-Z entry index
-- [docs/Output-Standards.md](../../../docs/Output-Standards.md) -- the quality bar every entry enforces
-- [templates/prompt-template.md](../../../templates/prompt-template.md) -- the entry skeleton
-- [ROADMAP.md](../../../ROADMAP.md) -- when this folder ships
+- [../README.md](../README.md) — the business domain
+- [../../README.md](../../README.md) — the full A–Z entry index
+- [../presentations/](../presentations/) — owns every slide-based deliverable
+- [../proposal/](../proposal/) — what follows a successful profile
+- [../../core/research/fact-checking.md](../../core/research/fact-checking.md) — auditing claims before submission
+- [../../../docs/Output-Standards.md](../../../docs/Output-Standards.md#content-standards) — claim substantiation rules
 
 ## References
 
-- [Claude Code documentation](https://docs.claude.com/en/docs/claude-code)
-- [WCAG 2.2](https://www.w3.org/TR/WCAG22/)
-- [OWASP Top 10](https://owasp.org/Top10/)
+- [Crown Commercial Service supplier guidance](https://www.crowncommercial.gov.uk/suppliers) — how formal procurement assesses suppliers
+- [UK Companies House](https://www.gov.uk/government/organisations/companies-house) — verifying registration details
+- [UK Information Commissioner's Office](https://ico.org.uk/) — consent for published biographies and case studies
