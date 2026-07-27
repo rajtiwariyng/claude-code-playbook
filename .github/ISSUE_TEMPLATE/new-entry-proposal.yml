@@ -1,0 +1,68 @@
+name: New entry proposal
+description: Propose a new playbook entry before writing it
+title: "[Entry] "
+labels: ["entry proposal", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Proposing before writing saves you from a rejected pull request. Most rejections
+        are for duplication or wrong folder — both are cheap to catch here.
+
+  - type: input
+    id: topic
+    attributes:
+      label: Entry topic
+      description: What task would this entry cover?
+      placeholder: "Auditing a Laravel application against OWASP Top 10"
+    validations:
+      required: true
+
+  - type: input
+    id: folder
+    attributes:
+      label: Target folder
+      description: Which folder should own this? See the ownership rules in CONTRIBUTING.md.
+      placeholder: "prompts/quality/security/"
+    validations:
+      required: true
+
+  - type: textarea
+    id: gap
+    attributes:
+      label: What gap does this fill?
+      description: Which existing entries did you check, and why do they not cover this?
+    validations:
+      required: true
+
+  - type: textarea
+    id: workflow
+    attributes:
+      label: Proposed workflow
+      description: Sketch the ordered stages. Each stage should be independently verifiable.
+      placeholder: |
+        1. Inventory the attack surface
+        2. Map each surface to an OWASP category
+        3. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources
+      description: Official documentation you will cite for factual claims.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Confirmations
+      options:
+        - label: I have used this workflow on a real project, not just imagined it
+          required: true
+        - label: I have read CONTRIBUTING.md and the ten-section structure
+          required: true
+        - label: I checked prompts/README.md for an existing entry on this topic
+          required: true

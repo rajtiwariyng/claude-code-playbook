@@ -1,0 +1,65 @@
+name: Entry defect
+description: Report an entry that is wrong, stale, or produced a poor result
+title: "[Defect] "
+labels: ["defect", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Reports that an entry **did not work** are among the most valuable contributions
+        to this repository, and the rarest. Thank you for taking the time.
+
+  - type: input
+    id: file
+    attributes:
+      label: Affected file
+      description: Path to the entry.
+      placeholder: "prompts/quality/security/owasp-top-10.md"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Defect type
+      options:
+        - Factually wrong (version, API, flag, limit, price)
+        - Stale (was correct, no longer is)
+        - Produced a poor or unusable result
+        - Workflow stage does not work as described
+        - Checklist item is subjective or unverifiable
+        - Broken link or formatting
+        - Duplicates another entry
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: What actually happened
+      description: Include the shape of the output. Redact anything confidential.
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Project type, stack, and anything unusual about your setup.
+    validations:
+      required: false
+
+  - type: textarea
+    id: source
+    attributes:
+      label: Correct source
+      description: If you are reporting a factual error, link the official documentation showing the correct value.
+    validations:
+      required: false
