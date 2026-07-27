@@ -1,4 +1,4 @@
-﻿# Frontend
+# Frontend
 
 Browser-side application architecture and patterns.
 

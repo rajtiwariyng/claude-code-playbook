@@ -1,4 +1,4 @@
-﻿# Performance
+# Performance
 
 **All performance guidance in this repository.** Every other folder links here.
 

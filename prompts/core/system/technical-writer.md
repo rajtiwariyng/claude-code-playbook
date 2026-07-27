@@ -163,7 +163,7 @@ It should **not** contain:
 
 **Abbreviated output**
 
-```markdown
+````markdown
 # Receiving Webhooks
 
 We POST JSON to your endpoint when a payment changes state. You verify
@@ -204,7 +204,7 @@ We time out at 10s and treat a timeout as a failure.
 | Signature never matches | Verifying the parsed body | Verify raw bytes before parsing |
 | Signature matches locally, fails in production | Framework middleware consuming the body | Capture raw body before middleware |
 | Duplicate processing | Retries after a slow 2xx | Dedupe on `event_id`; it is stable across retries |
-```
+````
 
 **Subtraction report**
 

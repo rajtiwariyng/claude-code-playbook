@@ -79,7 +79,8 @@ Target: Q3 2026.
 | Worked examples for the ten most-used entries | The Example section is where entries most often go thin | Planned |
 | Failure library in `examples/failures/` | Documented bad output is more instructive than good output | Planned |
 | Model-selection guidance per entry | Not every task justifies maximum reasoning effort | Planned |
-| Link checker in CI | Broken relative links are the most common decay mode in a cross-referenced repo | Planned |
+| Link checker in CI | Broken relative links are the most common decay mode in a cross-referenced repo | **Shipped in 1.0.0** |
+| Structure validator in CI | A documented standard that nothing checks drifts within a release | **Shipped in 1.0.0** |
 
 ## v1.2.0 — Automation
 
@@ -93,7 +94,6 @@ Target: Q4 2026.
 | Reference `CLAUDE.md` files per project archetype | Project memory is the highest-leverage configuration surface | Planned |
 | Hook recipes for verification gates | Enforcing a checklist beats documenting one | Planned |
 | Subagent role definitions | Multi-agent review benefits from stable, named roles | Planned |
-| Structure validator | Mechanically verify the ten-section contract on every PR | Planned |
 | Chained workflow definitions | Research → plan → build → review as a single declared pipeline | Planned |
 
 > [!NOTE]

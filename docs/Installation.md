@@ -261,8 +261,7 @@ The point of committing configuration is that improvements compound across the t
 | **4. Review AI-assisted changes normally** | Same review bar as any other change. Authorship does not alter the standard. |
 | **5. Revisit quarterly** | Stale conventions in `CLAUDE.md` actively mislead. |
 
-> [!NOTE]
-> Treat `CLAUDE.md` as documentation your team already needed. Most of what belongs in it is what a new hire would ask in their first week — which is why writing one usually improves onboarding as a side effect.
+**Treat `CLAUDE.md` as documentation your team already needed.** Most of what belongs in it is what a new hire would ask in their first week — which is why writing one usually improves onboarding as a side effect.
 
 ## Troubleshooting
 

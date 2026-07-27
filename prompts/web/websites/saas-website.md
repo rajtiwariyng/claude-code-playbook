@@ -282,7 +282,7 @@ STAGE 10 — CHURN SIGNALS IN THE SITE
 Which site content sets an expectation the product does not meet?
 Mis-set expectations are the cheapest churn to eliminate and the
 hardest to see, because the page reads well and the product works —
-they simply do not match.
+the two do not match.
 ```
 
 ## Related

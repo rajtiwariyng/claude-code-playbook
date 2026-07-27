@@ -1,4 +1,4 @@
-﻿# Infrastructure
+# Infrastructure
 
 Runtime environment, deployment, and edge.
 

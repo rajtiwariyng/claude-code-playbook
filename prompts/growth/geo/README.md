@@ -1,4 +1,4 @@
-﻿# Generative Engine Optimisation
+# Generative Engine Optimisation
 
 Optimising for AI answer engines and retrieval-based search.
 

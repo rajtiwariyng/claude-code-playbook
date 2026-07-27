@@ -1,4 +1,4 @@
-﻿# Nginx
+# Nginx
 
 Reverse proxy, TLS, caching, and rate limiting at the edge.
 

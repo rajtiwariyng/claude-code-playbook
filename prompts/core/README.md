@@ -1,4 +1,4 @@
-﻿# Core
+# Core
 
 Roles, research, planning, and documentation. Everything else in the playbook builds on this domain.
 

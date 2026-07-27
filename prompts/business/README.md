@@ -1,4 +1,4 @@
-﻿# Business
+# Business
 
 Client-facing and commercial deliverables: profiles, decks, sales material, and priced offers.
 

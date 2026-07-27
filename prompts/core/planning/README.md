@@ -1,4 +1,4 @@
-﻿# Planning
+# Planning
 
 Turning a decision into a plan whose every step can be verified independently.
 

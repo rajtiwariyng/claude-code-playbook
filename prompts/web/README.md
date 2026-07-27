@@ -1,4 +1,4 @@
-﻿# Web
+# Web
 
 Public-facing web surfaces: multi-page sites, conversion pages, internal applications, and the design decisions behind them.
 

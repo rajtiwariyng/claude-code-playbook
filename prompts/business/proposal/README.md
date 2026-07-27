@@ -1,4 +1,4 @@
-﻿# Proposals
+# Proposals
 
 Priced, scoped client offers and statements of work.
 

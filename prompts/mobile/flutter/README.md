@@ -1,4 +1,4 @@
-﻿# Flutter
+# Flutter
 
 Flutter-specific concerns only.
 
@@ -12,7 +12,7 @@ Flutter-specific concerns only.
 Flutter-specific concerns only.
 
 > [!IMPORTANT]
-> General mobile concerns are owned by [mobile/mobile/](../mobile/) and are not repeated here.
+> General mobile concerns are owned by [mobile/cross-platform/](../cross-platform/) and are not repeated here.
 
 ## Planned Entries
 

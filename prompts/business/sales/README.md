@@ -1,4 +1,4 @@
-﻿# Sales
+# Sales
 
 Sales narrative, objection handling, and collateral.
 

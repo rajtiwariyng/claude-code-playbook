@@ -1,4 +1,4 @@
-﻿# Presentations
+# Presentations
 
 All slide-based deliverables.
 

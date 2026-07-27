@@ -6,7 +6,7 @@ Mobile application concerns.
 
 | Folder | Owns | Status |
 | --- | --- | --- |
-| [mobile/](mobile/) | Cross-platform concerns | Planned v1.2 |
+| [cross-platform/](cross-platform/) | Cross-platform concerns | Planned v1.2 |
 | [flutter/](flutter/) | Flutter-specific concerns | Planned v1.2 |
 
 > [!IMPORTANT]

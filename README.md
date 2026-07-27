@@ -2,6 +2,7 @@
 
 > A production-grade knowledge base for driving [Claude Code](https://docs.claude.com/en/docs/claude-code) across real software, design, business, and documentation work.
 
+[![Audit](https://github.com/rajtiwariyng/claude-code-playbook/actions/workflows/audit.yml/badge.svg)](https://github.com/rajtiwariyng/claude-code-playbook/actions/workflows/audit.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![Docs](https://img.shields.io/badge/docs-Getting%20Started-blue.svg)](docs/Getting-Started.md)
@@ -99,10 +100,13 @@ claude-code-playbook/
 ├── checklists/      # Pre-flight and pre-ship verification lists
 ├── frameworks/      # Reusable mental models (RESEARCH, PLAN, SHIP, ...)
 ├── snippets/        # Small reusable prompt fragments and CLAUDE.md blocks
-└── assets/          # Diagrams, licensing notes, and image sourcing policy
+├── assets/          # Diagrams, licensing notes, and image sourcing policy
+└── scripts/         # Maintenance scripts that enforce the published standards
 ```
 
-**Why the grouping?** The original brief specified a flat list of 38 folders. Flat lists stop scaling at roughly a dozen entries, and several of the proposed folders overlap enough to attract duplicate content. Every folder name from the brief is preserved — they are simply nested under a domain group, with a flat A–Z index in [prompts/README.md](prompts/README.md). See [CONTRIBUTING.md](CONTRIBUTING.md#folder-ownership) for the ownership rules that keep overlapping topics from duplicating.
+Every rule in [docs/Style-Guide.md](docs/Style-Guide.md) that can be checked mechanically **is** checked, on every push, by [scripts/audit.ps1](scripts/audit.ps1) and [scripts/check-links.ps1](scripts/check-links.ps1). A documented standard that nothing enforces drifts within a release.
+
+**Why the grouping?** The original brief specified a flat list of 38 folders. Flat lists stop scaling at roughly a dozen entries, and several of the proposed folders overlap enough to attract duplicate content. Every folder name from the brief is preserved — nested under a domain group, with a flat A–Z index in [prompts/README.md](prompts/README.md). See [CONTRIBUTING.md](CONTRIBUTING.md#folder-ownership) for the ownership rules that keep overlapping topics from duplicating.
 
 ## How a Playbook Entry Is Structured
 
@@ -180,6 +184,17 @@ Contributions are welcome, and reviewed against the same standards the content t
 Active. Versioned with [Semantic Versioning](https://semver.org/); see [CHANGELOG.md](CHANGELOG.md) for release history and [ROADMAP.md](ROADMAP.md) for planned work.
 
 This repository documents patterns for using Claude Code. It is an independent community project and is not affiliated with or endorsed by Anthropic. Claude Code's own behaviour, flags, and configuration are documented at [docs.claude.com](https://docs.claude.com/en/docs/claude-code) — treat that as the source of truth when it disagrees with anything here, and please [open an issue](https://github.com/rajtiwariyng/claude-code-playbook/issues) so we can correct it.
+
+## Related
+
+| Document | Read it when |
+| --- | --- |
+| [docs/Getting-Started.md](docs/Getting-Started.md) | This is your first visit |
+| [docs/Prompting-Guide.md](docs/Prompting-Guide.md) | Output is generic and you do not know why |
+| [prompts/README.md](prompts/README.md) | You know the topic but not the folder |
+| [CONTRIBUTING.md](CONTRIBUTING.md) | You want to add or fix an entry |
+| [ROADMAP.md](ROADMAP.md) | You want to know what ships when |
+| [CHANGELOG.md](CHANGELOG.md) | You want to know what has already shipped |
 
 ## References
 

@@ -1,4 +1,4 @@
-﻿# AWS
+# AWS
 
 AWS architecture, deployment, and cost control.
 

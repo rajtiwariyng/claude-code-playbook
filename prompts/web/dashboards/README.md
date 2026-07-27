@@ -1,4 +1,4 @@
-﻿# Dashboards and Internal Applications
+# Dashboards and Internal Applications
 
 Data-dense interfaces used by people who use them every day: dashboards, admin panels, CRM, and ERP.
 

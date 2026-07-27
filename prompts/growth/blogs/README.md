@@ -1,4 +1,4 @@
-﻿# Blogs and Long-Form Content
+# Blogs and Long-Form Content
 
 Written editorial content.
 

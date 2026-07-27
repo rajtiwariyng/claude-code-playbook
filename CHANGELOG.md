@@ -23,7 +23,42 @@ Anything that breaks an existing deep link is a major change. Links into this re
 
 ### Added
 
-- Nothing yet.
+- `scripts/audit.ps1` — enforces the published standards mechanically: heading structure,
+  required sections, the ten-section entry contract, code-fence tagging and nesting, callout
+  budget, avoid-list wording, terminology, file naming, and whitespace.
+- `scripts/README.md` — what each check enforces and which document it comes from.
+- `.github/workflows/audit.yml` — runs the link checker, the standards audit, and markdownlint
+  on every push and pull request.
+- `SECURITY.md` — disclosure policy, scoped to what this repository actually is. Names defective
+  security guidance as an in-scope vulnerability, because wrong security guidance is worse than
+  none.
+- Style-Guide: a section defining what the avoid-list bans do *not* cover, and an explicit table
+  of which files are exempt from the `Related`/`References` requirement.
+- README: a `Related` section and an audit status badge.
+
+### Changed
+
+- **Renamed `prompts/mobile/mobile/` to `prompts/mobile/cross-platform/`.** The domain grouping
+  collided with the original folder name and produced a path that read as a mistake.
+- **Callout budget now scales with document length** — roughly one per 75 lines, minimum three,
+  maximum six. The previous flat cap of three was written for entries and was wrong for a
+  300-line reference document.
+- **Scoped the `Related`/`References` requirement to content files.** `CHANGELOG.md` and
+  `CODE_OF_CONDUCT.md` follow external standards whose structure is more valuable than internal
+  consistency.
+
+### Fixed
+
+- **Nested code fence in `prompts/core/system/technical-writer.md`** — a three-backtick block
+  inside another three-backtick block terminated early, so roughly twenty lines of the example
+  rendered as live headings and tables on GitHub instead of as sample output.
+- Seven headings in `docs/FAQ.md` carried trailing full stops, violating the repository's own
+  no-trailing-punctuation rule.
+- 45 files were missing a final newline.
+- Filler wording in `README.md`, `docs/Getting-Started.md`, and
+  `prompts/web/websites/saas-website.md`.
+- `prompts/README.md` was missing its `References` section; `README.md` was missing `Related`.
+- `ROADMAP.md` listed the link checker and structure validator as planned after both had shipped.
 
 ---
 

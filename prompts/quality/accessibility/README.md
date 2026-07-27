@@ -1,4 +1,4 @@
-﻿# Accessibility
+# Accessibility
 
 **All accessibility guidance in this repository.** Every other folder links here.
 

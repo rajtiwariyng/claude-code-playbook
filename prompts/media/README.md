@@ -1,4 +1,4 @@
-﻿# Media
+# Media
 
 Images and video: sourcing, licensing, production, and delivery.
 

@@ -1,4 +1,4 @@
-﻿# Company Profile
+# Company Profile
 
 The company profile document -- capability statements, credentials, and corporate overviews.
 

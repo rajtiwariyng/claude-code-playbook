@@ -1,4 +1,4 @@
-﻿# CMS and Commerce
+# CMS and Commerce
 
 Platform-specific work on content management and commerce systems.
 

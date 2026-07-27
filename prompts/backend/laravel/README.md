@@ -1,4 +1,4 @@
-﻿# Laravel
+# Laravel
 
 Laravel application work end to end.
 

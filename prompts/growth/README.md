@@ -1,4 +1,4 @@
-﻿# Growth
+# Growth
 
 Being found, and being worth reading when you are.
 

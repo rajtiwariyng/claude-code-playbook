@@ -1,4 +1,4 @@
-﻿# Debugging
+# Debugging
 
 Systematic fault isolation -- finding the cause before proposing a fix.
 
