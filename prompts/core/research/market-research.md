@@ -160,6 +160,7 @@ It should **not** contain:
 
 ## Example
 
+> **Provenance:** constructed. Inputs and output demonstrate the pattern; this is not a transcript of a real run.
 **Inputs**
 
 | Input | Value |
@@ -168,8 +169,6 @@ It should **not** contain:
 | `{{GEOGRAPHY}}` | United Kingdom |
 | `{{PRICE_POINT}}` | £15–25/month |
 | `{{DECISION_IT_INFORMS}}` | Whether to commit two engineers for a quarter |
-
-*Figures below are illustrative of the method; the derivations are the point, not the numbers.*
 
 **Abbreviated output**
 

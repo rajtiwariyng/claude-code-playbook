@@ -156,6 +156,7 @@ It should **not** contain:
 
 ## Example
 
+> **Provenance:** constructed. Inputs and output demonstrate the pattern; this is not a transcript of a real run.
 **Inputs**
 
 | Input | Value |

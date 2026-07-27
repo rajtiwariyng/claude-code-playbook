@@ -67,6 +67,32 @@ Anything that breaks an existing deep link is a major change. Links into this re
 
 ### Fixed
 
+- **A fabricated empirical claim.** `prompts/core/system/role-composition.md` stated
+  "**Effect observed.**" followed by a specific before/after comparison of a migration review.
+  No run existed behind it. This is precisely the failure the repository's own
+  [Research-Framework](docs/Research-Framework.md) warns about and CONTRIBUTING forbids —
+  presenting a constructed illustration as a measured result. Replaced with an explanation of
+  what the role does and an instruction to run the A/B yourself.
+
+  Three changes follow from it, so it cannot recur silently:
+
+  1. **Example provenance is now mandatory.** Every `## Example` opens with
+     `> **Provenance:** real run.` or `> **Provenance:** constructed.` A constructed example
+     may explain what the prompt does; it may never claim an observation.
+  2. **Enforced by `scripts/audit.ps1`** (`PROVENANCE` check), which flags a missing label and
+     any observation claim inside a constructed example. Verified against both violation types.
+  3. **All 24 entries labelled.** Every one carries `constructed`, disclosed in
+     `prompts/README.md` rather than left for a reader to discover.
+
+- **A contradiction between CONTRIBUTING and the FAQ.** The FAQ answered a flat "No" to
+  contributing an entry you have not run, while the pull request template permitted an
+  illustrative example. That gap is what let the fabricated claim through review. Both now
+  point at the provenance rule.
+
+- **The non-affiliation disclaimer was too far down the README.** The name reads as official;
+  anyone assuming so had done it long before reaching "Project Status". Now directly under the
+  title.
+
 - **Nested code fence in `prompts/core/system/technical-writer.md`** — a three-backtick block
   inside another three-backtick block terminated early, so roughly twenty lines of the example
   rendered as live headings and tables on GitHub instead of as sample output.

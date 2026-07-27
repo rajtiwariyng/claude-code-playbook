@@ -164,11 +164,23 @@ visible to reviewers and fail review.
 ## Example
 
 <!--
-A concrete filled-in run with realistic inputs and abbreviated output.
+PROVENANCE IS MANDATORY. Keep exactly one of the two lines below and
+delete the other. There is no third option and no unlabelled example.
 
-If the inputs are constructed rather than from a real project, say so
-in one line. Never present a synthetic transcript as a real run.
+  real run    — you executed this against a real project. You may write
+                "the review found", "this surfaced", measured results.
+  constructed — written to demonstrate the pattern. You may explain what
+                the prompt does and why each part is there. You may NOT
+                claim an observation: no "effect observed", no before/after
+                comparison, no "in testing this produced". Those are
+                empirical claims, and an empirical claim with no run behind
+                it is a fabrication however plausible it reads.
+
+Enforced by scripts/audit.ps1 (PROVENANCE check).
 -->
+
+> **Provenance:** real run.
+> **Provenance:** constructed. Inputs and output demonstrate the pattern; this is not a transcript of a real run.
 
 **Inputs**
 

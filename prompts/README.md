@@ -116,8 +116,23 @@ Every published entry, alphabetically. This is the index to search when you know
 
 This repository publishes **depth over breadth**. Folders marked *Planned* have an index describing their intended scope but no entries yet.
 
-> [!NOTE]
-> An empty folder with an honest index is better than a folder padded with thin entries. Every published entry has been written to the full ten-section standard; none is a placeholder. See [ROADMAP.md](../ROADMAP.md) for what ships when, and [CONTRIBUTING.md](../CONTRIBUTING.md) if you want to write one.
+An empty folder with an honest index is better than a folder padded with thin entries. Every published entry is written to the full ten-section standard; none is a placeholder. See [ROADMAP.md](../ROADMAP.md) for what ships when.
+
+### What these entries have not been through
+
+Two limitations you should know before relying on them.
+
+**The examples are constructed.** Every entry in 1.0.0 carries `Provenance: constructed` — inputs and outputs were written to demonstrate the pattern, not transcribed from a real project. The prompts are built on established technique; the *examples* illustrate rather than evidence. Contributed real runs rank above them and are the most wanted contribution here. See [the provenance rule](../CONTRIBUTING.md#example-provenance-is-mandatory).
+
+**The Common Mistakes tables are reasoned, not tallied.** They describe failure modes that follow from how each task is structured. They are not counts from a corpus of observed runs, and no entry claims they are.
+
+Both are disclosed rather than left for a reader to discover, because a repository that publishes a sourcing standard and then quietly falls short of it is worth less than one with no standard at all.
+
+### Known coverage gap
+
+The most common thing people use Claude Code for — **implementing a feature in an existing codebase** — has no dedicated entry. [core/system/senior-engineer.md](core/system/senior-engineer.md) supplies the stance and [docs/AI-Agent-Workflow.md](../docs/AI-Agent-Workflow.md) supplies the staging, but the task itself is covered by inference rather than directly.
+
+This is a real gap and it is first on the [roadmap](../ROADMAP.md#v110--depth). Naming it is more useful than a thin entry that pretends to close it.
 
 ## Choosing an Entry
 

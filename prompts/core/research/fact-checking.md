@@ -168,6 +168,7 @@ It should **not** contain:
 
 ## Example
 
+> **Provenance:** constructed. Inputs and output demonstrate the pattern; this is not a transcript of a real run.
 **Inputs**
 
 | Input | Value |
@@ -175,8 +176,6 @@ It should **not** contain:
 | `{{DOCUMENT}}` | A one-page technical comparison prepared for a client, recommending a stack |
 | `{{AUTHORITATIVE_SOURCES}}` | Vendor documentation and official release notes |
 | `{{STAKES}}` | Sent to a client as the basis for a build decision |
-
-*Document contents are illustrative; the verdict pattern is the point.*
 
 **Abbreviated output**
 
