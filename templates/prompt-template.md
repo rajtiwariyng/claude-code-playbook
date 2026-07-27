@@ -44,8 +44,8 @@ Use something else when:
 
 | Situation | Go to |
 | --- | --- |
-| Adjacent situation this entry does not cover | [related-entry.md](related-entry.md) |
-| Another adjacent situation | [other-entry.md](../other-folder/other-entry.md) |
+| Adjacent situation this entry does not cover | `./related-entry.md` |
+| Another adjacent situation | `../../<domain>/<folder>/other-entry.md` |
 
 ## Inputs Required
 
@@ -146,7 +146,7 @@ cut it.
 - [ ] Objective, verifiable criterion
 - [ ] Every factual claim carries a source
 - [ ] Assumptions are listed separately from findings
-- [ ] Meets the relevant standards in [Output-Standards.md](../../docs/Output-Standards.md)
+- [ ] Meets the relevant standards in `docs/Output-Standards.md`
 
 ## Common Mistakes
 
@@ -201,12 +201,20 @@ failure-mode analysis, or a verification stage.
 
 ## Related
 
-<!-- Minimum two in-repo links. Link to the OWNING folder for shared
-concerns rather than restating them. -->
+<!--
+Minimum two in-repo links. Link to the OWNING folder for shared concerns
+rather than restating them.
 
-- [related-entry.md](related-entry.md) — how it relates
-- [../other-folder/entry.md](../other-folder/entry.md) — how it relates
-- [docs/Output-Standards.md](../../docs/Output-Standards.md) — the quality bar this entry enforces
+Placeholders below are deliberately not real links — replace them.
+Relative depth from a typical entry at prompts/<domain>/<folder>/entry.md:
+  sibling entry      ./other-entry.md
+  another folder     ../../<domain>/<folder>/
+  repository docs    ../../../docs/Output-Standards.md
+-->
+
+- `./related-entry.md` — how it relates
+- `../../<domain>/<folder>/` — how it relates
+- `../../../docs/Output-Standards.md` — the quality bar this entry enforces
 
 ## References
 
